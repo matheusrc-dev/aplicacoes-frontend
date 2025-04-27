@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparador de Combustível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Comparador de Combustível</h1>
+    <form id="postoForm">
+        <div class="postos-flex">
+            <fieldset>
+                <legend>Posto 1</legend>
+                <label>Nome: <input type="text" name="nome1" required></label>
+                <label>Gasolina: <input type="number" name="gasolina1" step="0.01" required></label>
+                <label>Etanol: <input type="number" name="etanol1" step="0.01" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Posto 2</legend>
+                <label>Nome: <input type="text" name="nome2" required></label>
+                <label>Gasolina: <input type="number" name="gasolina2" step="0.01" required></label>
+                <label>Etanol: <input type="number" name="etanol2" step="0.01" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Posto 3</legend>
+                <label>Nome: <input type="text" name="nome3" required></label>
+                <label>Gasolina: <input type="number" name="gasolina3" step="0.01" required></label>
+                <label>Etanol: <input type="number" name="etanol3" step="0.01" required></label>
+            </fieldset>
+        </div>
+        <button type="submit">Comparar</button>
+    </form>
+    <div id="resultado"></div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
