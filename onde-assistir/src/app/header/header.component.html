@@ -1,0 +1,28 @@
+<header>
+  <nav class="navbar bg-base-100 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <a class="btn btn-ghost normal-case text-xl">Meu Projeto</a>
+      <div class="flex lg:hidden">
+        <button class="btn btn-square btn-ghost" (click)="isMenuOpen = !isMenuOpen">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <!-- Mobile Menu -->
+      <div [class.hidden]="!isMenuOpen" class="absolute top-16 left-0 right-0 bg-base-100 lg:hidden">
+        <ul class="menu menu-vertical px-1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
